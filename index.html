@@ -23,22 +23,19 @@
             letter-spacing: 0.15em;
         }
 
-        /* Prevent text wrapping globally for designated invitation text classes */
         .nowrap {
             white-space: nowrap;
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-2 sm:p-6" style="font-family: 'Times New Roman', Georgia, Times, serif;">
+<body class="flex items-center justify-center min-h-screen p-2 sm:p-6">
 
     <div class="w-full max-w-[560px] bg-white shadow-2xl px-4 py-10 sm:px-10 sm:py-14 text-center mx-auto my-auto overflow-hidden">
         
-        <!-- Header: INVITATION -->
         <h1 class="font-invitation text-3xl sm:text-4xl uppercase tracking-[0.2em] font-normal mb-6 text-black nowrap">
             INVITATION
         </h1>
 
-        <!-- Subtitle & Discount -->
         <div class="mb-8">
             <h2 class="font-serif-custom italic text-2xl sm:text-3xl font-normal mb-1 nowrap">
                 Private Sale
@@ -48,9 +45,7 @@
             </p>
         </div>
 
-        <!-- Dates Section -->
         <div class="flex justify-center items-start gap-6 sm:gap-10 max-w-[320px] mx-auto mb-8 text-black">
-            <!-- Left Date (10/7 Wed.) -->
             <div class="text-center px-1">
                 <div class="font-serif-custom flex items-baseline justify-center mb-1 nowrap">
                     <span class="text-3xl sm:text-4xl font-normal">10</span>
@@ -63,7 +58,6 @@
                 </div>
             </div>
 
-            <!-- Right Date (8 Thu.) -->
             <div class="text-center px-1">
                 <div class="font-serif-custom flex items-baseline justify-center mb-1 nowrap">
                     <span class="text-4xl sm:text-5xl font-normal">8</span>
@@ -75,36 +69,31 @@
             </div>
         </div>
 
-        <!-- Event Description & Map Placeholder Row（gap-4からgap-1 sm:gap-2に変更して間隔を詰めました） -->
         <div class="flex flex-col sm:flex-row items-center justify-between gap-1 sm:gap-2 text-left mb-1">
-            <!-- Left Text Block (No Wrap Line by Line) -->
             <div class="text-[12px] sm:text-[12.5px] leading-[1.8] tracking-tighter text-gray-900 font-normal">
                 <p class="nowrap">上記期間にて、ご招待の方限定で</p>
                 <p class="nowrap">プライベートセールを特別開催いたします。</p>
                 <p class="nowrap">皆様のご来場を心よりお待ちしております。</p>
             </div>
 
-            <!-- Right Map Area -->
             <div class="text-center">
-                <img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/map-tokyo.jpg" alt="アクセスマップ" class="max-w-full h-auto mx-auto rounded">
+                <img src="img/map-tokyo.jpg" alt="アクセスマップ" class="max-w-full h-auto mx-auto rounded">
             </div>
         </div>
 
-        <!-- Company Address -->
         <div class="text-[10px] sm:text-[10.5px] tracking-tight text-black mb-6 nowrap">
             株式会社エム・アイ・ディー PRESS ROOM<br>
             東京都渋谷区神宮前4-13-16
         </div>
 
-        <!-- Notices Area -->
         <center>
-            <p style="margin:0; padding:0 20px; font-size:12px; color:#000000; line-height:1.5; font-family: 'Times New Roman', Georgia, Times, serif;">
+            <p style="margin:0; padding:0 20px; font-size:12px; color:#000000; line-height:1.5;">
                 ※ご入場の際はこちらの画面をご提示くださいませ。<br>
                 <span style="font-size:10px;">(ご同伴者2名様まで)</span><br>
                 ※お支払いには各種クレジットカードがご使用になれます。<br>
                 <span style="font-size:10px;">(一括払いのみ)</span>
             </p>
-            <!-- URL / Registration Notice -->
+
             <div class="mb-8">
                 <p class="text-[9.5px] sm:text-[10px] text-gray-800 mb-2 nowrap">
                     <br>※以下より会員登録いただきますと次回よりメールでご招待いたします！
@@ -114,30 +103,46 @@
                     ＞＞ 会員登録はこちら ＜＜
                 </a>
             </div>
+
             <br />
             <div style="border-bottom: 10px solid #000000; padding-bottom: 10px; margin-bottom: 20px;"></div>
 
-            <!-- バナーのテーブル幅 -->
             <table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 auto;">
                 <tr>
                     <td>
-                        <div style="border-bottom: 1px solid #969696;"><a href="https://e-shopping.m-i-d.co.jp/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine"><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/ec_btn.jpg" alt="e-shopping" style="width:100%; display:block;"></a></div>
-                        <div style="border-bottom: 1px solid #969696;"><a href="https://aveniretoile.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine"><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/ae_btn.jpg" alt="aveniretoile" style="width:100%; display:block;"></a></div>
-                        <div style="border-bottom: 1px solid #969696;"><a href="https://blenheim-jp.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine"><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/ble_btn.jpg" alt="blenheim" style="width:100%; display:block;"></a></div>
-                        <div style="border-bottom: 1px solid #969696;"><a href="https://m-premier.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine"><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/mp_btn.jpg" alt="m-premier" style="width:100%; display:block;"></a></div>
+                        <div style="border-bottom: 1px solid #969696;">
+                            <a href="https://e-shopping.m-i-d.co.jp/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine">
+                                <img src="img/ec_btn.jpg" alt="e-shopping" style="width:100%; display:block;">
+                            </a>
+                        </div>
+                        <div style="border-bottom: 1px solid #969696;">
+                            <a href="http://aveniretoile.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine">
+                                <img src="img/ae_btn.jpg" alt="aveniretoile" style="width:100%; display:block;">
+                            </a>
+                        </div>
+                        <div style="border-bottom: 1px solid #969696;">
+                            <a href="http://blenheim-jp.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine">
+                                <img src="img/ble_btn.jpg" alt="blenheim" style="width:100%; display:block;">
+                            </a>
+                        </div>
+                        <div style="border-bottom: 1px solid #969696;">
+                            <a href="http://m-premier.com/?utm_source=202606-tokyo-2&utm_medium=mail&utm_campaign=mailmagazine">
+                                <img src="img/mp_btn.jpg" alt="m-premier" style="width:100%; display:block;">
+                            </a>
+                        </div>
                     </td>
                 </tr>
             </table>
 
             <table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 auto;">
                 <tr>
-                    <td><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/space.gif" height="80" alt="" style="display:block;"></td>
+                    <td><img src="img/space.gif" height="80" alt="" style="display:block;"></td>
                 </tr>
                 <tr>
                     <td>
                         <table cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; background: #f4f4f4; padding: 0; text-align: left; width: 100%; color: #545454;">
                             <tr>
-                                <td><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/space.gif" height="45" alt="" style="display:block;"></td>
+                                <td><img src="img/space.gif" height="45" alt="" style="display:block;"></td>
                             </tr>
                             <br>
                             <tr>
@@ -149,7 +154,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><img src="https://www.m-i-d.co.jp/mailmag/vol36f/img/space.gif" height="40" alt="" style="display:block;"></td>
+                                <td><img src="img/space.gif" height="40" alt="" style="display:block;"></td>
                             </tr>
                         </table>
                     </td>
