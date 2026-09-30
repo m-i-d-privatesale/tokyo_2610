@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INVITATION - Private Sale</title>
+    
+    <!-- ▼▼▼ 1. Google アナリティクス タグ（G-XXXXXXXXXX を取得した測定IDに変更してください） ▼▼▼ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFTGZLQRE5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- ▲▲▲ ここまで ▲▲▲ -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -102,18 +114,20 @@
                    class="text-[12px] font-bold text-black underline hover:opacity-75 transition-opacity nowrap inline-block">
                     ＞＞ 会員登録はこちら ＜＜
                 </a>
-                
-                <!-- 追加部分：招待状ダウンロードリンク -->
+
+                <!-- ▼▼▼ 2. ダウンロード数計測コード（onclickイベントを追加） ▼▼▼ -->
                 <div class="mt-4">
                     <a href="img/privatesale_tokyo_invitation.png" download target="_blank" rel="noopener noreferrer" 
+                       onclick="gtag('event', 'download_invitation', {'event_category': 'invitation', 'event_label': 'tokyo_sale'});"
                        class="text-[12px] font-bold text-black underline hover:opacity-75 transition-opacity nowrap inline-block">
                         ＞＞ 招待状ダウンロードはこちら ＜＜
                     </a>
                 </div>
+                <!-- ▲▲▲ ここまで ▲▲▲ -->
             </div>
 
             <br />
-            <div style="border-bottom: 10px solid #000000; padding-bottom: 10px; margin-bottom: 20px;"></div>
+            <div style="border-bottom: 1px solid #000000; padding-bottom: 10px; margin-bottom: 20px;"></div>
 
             <table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 auto;">
                 <tr>
